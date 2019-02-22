@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Reddit";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<h2> Object oriented</h2>
+
+@foreach (var item in ViewBag.Aww)
+{
+
+    
+<p><a href="@item.Permalink">@item.Title</a></p>
+    <picture>
+        <img src="@item.Image" alt="RedditTroll" style"width : auto;" />
+    </picture>
+    <br />
+    <br />
+    <br />
+
+
+}
+@*<p>
+    @Html.ActionLink("Next Page", "NextReddit", "Home")  |
+    </p>  figure out how to store the Posts in a session and pull the next ones out of the list with a new ActionResult directing back to Reddit()*@
